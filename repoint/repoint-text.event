@@ -1,0 +1,32 @@
+#ifdef TOOL_HELPERS
+    ERROR "Need installed before tools helpers included!"
+#endif
+
+#define TextTable NewTextTable // define to not conflict with Tool Helpers
+#define MaxTextEntries 0x2000
+
+#define AnitiHuff(ptr) "0x88000000 | ptr"
+
+PUSH
+    ORG 0x013B10
+    POIN TextTable
+    PROTECT 0x013B10 0x013B14
+
+    ORG 0x100430
+    POIN TextTable
+    PROTECT 0x100430 0x100434
+POP
+
+ALIGN 4
+TextTable:
+    #include "data/msg-alloc.event"
+    #include "data/msg-alloc.event"
+    #include "data/msg-alloc.event"
+    #include "data/msg-alloc.event"
+
+    ORG TextTable + (MaxTextEntries) * 4
+
+PUSH
+    ORG TextTable
+        #incbin "data/VanillaMsgTable.bin"
+POP

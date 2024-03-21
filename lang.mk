@@ -1,0 +1,2 @@
+CONFIG_LANG := cn
+# CONFIG_LANG := en

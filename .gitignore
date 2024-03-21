@@ -1,0 +1,38 @@
+.vscode/
+.cache_dir/
+.release_dir/
+*__pycache__
+install-devkitpro-pacman
+
+*.gba
+*.sym
+*.ref.s
+*.ref.event
+*.bsdiff
+
+# Tools
+tools/EventAssembler/
+tools/FE6-CLib/
+
+# Wizardry
+*.o
+*.d
+*.dmp
+*.lyn.event
+
+# Spritans
+*.4bpp
+*.gbapal
+*.lz
+*.img.bin
+*.map.bin
+*.pal.bin
+
+# Tables
+*.csv.event
+
+# Fonts
+*.fefont
+
+# EfxAnims
+*.efx.event

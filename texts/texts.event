@@ -1,0 +1,6 @@
+ALIGN 4
+TestString:
+    #incbin "test-string.txt"
+    BYTE 0
+
+setText(0x7EC, TestString | 0x88000000)

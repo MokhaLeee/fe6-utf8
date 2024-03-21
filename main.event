@@ -1,0 +1,16 @@
+#include "EAstdlib.event"
+#include "Extensions/Hack Installation.txt"
+#include "Extensions/ProcDefinitions.txt"
+
+ORG 0x00800000
+#include "repoint/repoint-text.event"
+
+/* Install after repointing */
+#include "Tools/Tool Helpers.txt"
+
+#include "fonts/fonts.event"
+#include "chax/chax.event"
+#include "hard-coded-string/hard-coded-string.event"
+#include "texts/texts.event"
+
+MESSAGE END_AT CURRENTOFFSET

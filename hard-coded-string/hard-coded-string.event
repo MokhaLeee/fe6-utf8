@@ -1,0 +1,6 @@
+#include "MiscFix/fe6-strings-fixes.event"
+#include "MiscFix/fe6-strings-english-fixes.event"
+
+/* Auto generated */
+#include "data/fe6-strings-repoint.event"
+#include "data/fe6-strings.lyn.event"
